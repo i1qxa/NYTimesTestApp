@@ -2,8 +2,8 @@ package com.example.nytimestestapp.data
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.nytimesapp.data.local.reviews.ReviewItemDB
-import com.example.nytimesapp.data.local.reviews.ReviewsDao
+import com.example.nytimestestapp.data.local.reviews.ReviewItemDB
+import com.example.nytimestestapp.data.local.reviews.ReviewsDao
 
 @Database(
     version = 1,
@@ -14,6 +14,6 @@ import com.example.nytimesapp.data.local.reviews.ReviewsDao
 )
 abstract class AppDatabase:RoomDatabase() {
 
-    abstract fun reviewsDao():ReviewsDao
+    abstract fun reviewsDao(): ReviewsDao
 
 }
