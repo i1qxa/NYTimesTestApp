@@ -1,6 +1,6 @@
-package com.example.nytimesapp.data.remote.reviews
+package com.example.nytimestestapp.data.remote.reviews
 
-import com.example.nytimesapp.data.local.reviews.ReviewItemDB
+import com.example.nytimestestapp.data.local.reviews.ReviewItemDB
 
 class MapperReviewRemote {
 

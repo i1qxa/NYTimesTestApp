@@ -1,4 +1,4 @@
-package com.example.nytimesapp.data.remote.reviews
+package com.example.nytimestestapp.data.remote.reviews
 
 import retrofit2.Response
 import retrofit2.http.GET

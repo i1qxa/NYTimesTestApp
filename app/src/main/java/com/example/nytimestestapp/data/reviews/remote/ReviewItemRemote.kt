@@ -1,4 +1,4 @@
-package com.example.nytimesapp.data.remote.reviews
+package com.example.nytimestestapp.data.remote.reviews
 
 import com.example.nytimestestapp.data.reviews.remote.LinkRemote
 import kotlinx.serialization.SerialName

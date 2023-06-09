@@ -1,4 +1,4 @@
-package com.example.nytimesapp.data.local.reviews
+package com.example.nytimestestapp.data.local.reviews
 
 import androidx.room.Entity
 import androidx.room.ForeignKey
