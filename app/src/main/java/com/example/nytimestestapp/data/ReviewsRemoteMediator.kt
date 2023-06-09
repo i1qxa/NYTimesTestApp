@@ -1,5 +1,6 @@
 package com.example.nytimestestapp.data
 
+import android.util.Log
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadType
 import androidx.paging.PagingState
@@ -30,7 +31,7 @@ class ReviewsRemoteMediator @AssistedInject constructor (
         pageIndex = getPageIndex(loadType) ?: return RemoteMediator.MediatorResult.Success(
             endOfPaginationReached = true
         )
-
+        Log.i("PAGE_INDEX = ", pageIndex.toString())
         val limit = state.config.pageSize
         val offset = pageIndex * limit
 
