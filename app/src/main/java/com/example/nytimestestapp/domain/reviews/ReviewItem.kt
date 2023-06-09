@@ -1,4 +1,4 @@
-package com.example.nytimesapp.domain.reviews
+package com.example.nytimestestapp.domain.reviews
 
 data class ReviewItem(
     val id:Long,

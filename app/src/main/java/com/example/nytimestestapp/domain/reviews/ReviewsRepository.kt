@@ -1,4 +1,4 @@
-package com.example.nytimesapp.domain.reviews
+package com.example.nytimestestapp.domain.reviews
 
 import androidx.paging.PagingData
 import kotlinx.coroutines.flow.Flow
