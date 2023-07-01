@@ -28,7 +28,7 @@ class ReviewsRemoteMediator @AssistedInject constructor (
         state: PagingState<Int, ReviewItemDB>
     ): MediatorResult {
 
-        pageIndex = getPageIndex(loadType) ?: return RemoteMediator.MediatorResult.Success(
+        pageIndex = getPageIndex(loadType) ?: return MediatorResult.Success(
             endOfPaginationReached = true
         )
         Log.i("PAGE_INDEX = ", pageIndex.toString())
@@ -42,11 +42,11 @@ class ReviewsRemoteMediator @AssistedInject constructor (
             } else {
                 reviewsDao.insertListReviews(reviews)
             }
-            RemoteMediator.MediatorResult.Success(
+            MediatorResult.Success(
                 endOfPaginationReached = reviews.size < limit
             )
         } catch (e: Exception) {
-            RemoteMediator.MediatorResult.Error(e)
+            MediatorResult.Error(e)
         }
     }
 
