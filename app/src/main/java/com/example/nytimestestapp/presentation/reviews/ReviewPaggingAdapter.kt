@@ -21,11 +21,6 @@ class ReviewPaggingAdapter(context: Context) : PagingDataAdapter<ReviewItem, Rev
     override fun onBindViewHolder(holder: ReviewViewHolder, position: Int) {
         val item = getItem(position)
         item?.let { holder.bind(it) }
-//        with(holder){
-//            tvTitle.text = item?.headLine
-//            tvSummary.text=item?.summaryShort
-//            tvDate.text=item?.publicationDate
-//        }
     }
 }
 
